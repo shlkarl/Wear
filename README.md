@@ -1,4 +1,4 @@
 # Wear
 Проект является решением в сфере носимой электроники в виде одежды с управляемыми свойствами. В данном протоипе реализованы такие функции как: подогрев, LED-посдветка, встроенный повербанк. Управление происходит посредствам WEB-интерфейса. 
-![image](https://github.com/user-attachments/assets/81bb17de-d2d2-4809-bce3-821685797bce)
-![image](https://github.com/user-attachments/assets/1b3ab5f4-e8e7-41ef-b1af-a8e42b33472a)
+![](https://github.com/user-attachments/assets/81bb17de-d2d2-4809-bce3-821685797bce)
+![](https://github.com/user-attachments/assets/1b3ab5f4-e8e7-41ef-b1af-a8e42b33472a)
