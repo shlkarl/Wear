@@ -1,3 +1,4 @@
+
 #include <WiFi.h>
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
@@ -65,7 +66,7 @@ void setup(){
     else if (request->hasParam(Heat_right)) {inputMessage = request->getParam(Heat_right)->value(); Termal.SetRight(inputMessage.toInt());}
 
     request->send(200, "text/plain", "OK");});
-server.on("/state", HTTP_GET, [] (AsyncWebServerRequest *request) { request->send(200, "text/plain",(String(Charge.getCharge())+ "% Temperature:22°C" /*+ String(Termal.GetFront()) + "22°C"*/).c_str());});
+server.on("/state", HTTP_GET, [] (AsyncWebServerRequest *request) { request->send(200, "text/plain",(String(Charge.getCharge())+ "% Temperature:" + String(Termal.GetFront()) + "°C"+ String(Termal.GetBack()) + "°C"+ String(Termal.GetLeft()) + "°C").c_str());});
   //server.on("/state", HTTP_GET, [] (AsyncWebServerRequest *request) { request->send(200, "text/plain", String(Termal.GetFront()).c_str());});
 
   server.begin();
